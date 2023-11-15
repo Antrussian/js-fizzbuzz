@@ -1,0 +1,9 @@
+.card {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper {
+
+}

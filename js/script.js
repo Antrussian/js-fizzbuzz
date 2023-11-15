@@ -37,6 +37,8 @@ const wrapperElement=document.querySelector('div.wrapper');
 for (let output = 1 ; output <= 100 ; output++ ) {
 /* do intervallo di ciclo*/
   
+
+/* creo elementi nell'html*/
 const cardElement = document.createElement ('div');
 cardElement.className = 'card';
 const pElement=document.createElement('p');
@@ -48,24 +50,27 @@ cardElement.appendChild(pElement);
 
 
 
+
+
+
+
 /* per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.*/
     if (output % 3 === 0 && output % 5 === 0) {
         console.log("FizzBuzz");
-        pElement.innerHTML = output;
-        
-       
+   
+        pElement.textContent = 'FizzBuzz';
 
     }
 /*per i multipli di 3 stampi “Fizz” al posto del numero*/
     else if ( output % 3 === 0 ) {
         console.log("Fizz");
-        pElement.innerHTML = output;
+        pElement.textContent = 'Fizz';
         
     }
 /* per i multipli di 5 stampi “Buzz” al posto del numero*/
     else if ( output % 5 === 0 ) {
         console.log("Buzz");
-        pElement.innerHTML = output;
+        pElement.textContent = 'Buzz';
     }
 
 
