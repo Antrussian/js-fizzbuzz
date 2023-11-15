@@ -31,41 +31,56 @@ Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 
 
 
-const ouputElement = document.querySelector('#div.outputElement')
-/* dichiaro elemento = seleziono elemento in html tramite query del selettore */
-
+  
+const wrapperElement=document.querySelector('div.wrapper');
 
 for (let output = 1 ; output <= 100 ; output++ ) {
 /* do intervallo di ciclo*/
+  
+const cardElement = document.createElement ('div');
+cardElement.className = 'card';
+const pElement=document.createElement('p');
+
+
+wrapperElement.appendChild(cardElement);
+cardElement.appendChild(pElement);
+
+
 
 
 /* per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz” al posto del numero.*/
     if (output % 3 === 0 && output % 5 === 0) {
         console.log("FizzBuzz");
+        pElement.innerHTML = output;
+        
+       
+
     }
 /*per i multipli di 3 stampi “Fizz” al posto del numero*/
     else if ( output % 3 === 0 ) {
         console.log("Fizz");
+        pElement.innerHTML = output;
+        
     }
 /* per i multipli di 5 stampi “Buzz” al posto del numero*/
     else if ( output % 5 === 0 ) {
         console.log("Buzz");
+        pElement.innerHTML = output;
     }
+
 
 
     else {
         console.log(output);
+        pElement.innerHTML = output;
 
     }
 
 
-
     
-       const testoAttuale = outputElement.textContent;
-/*variabile d'appoggio = elemento testuale nell html*/
-       outputElement.textContent = testoAttuale + output + " ";
-
-
+    
+    
+   
 
 }
 
