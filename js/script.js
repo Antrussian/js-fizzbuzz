@@ -59,18 +59,21 @@ cardElement.appendChild(pElement);
         console.log("FizzBuzz");
    
         pElement.textContent = 'FizzBuzz';
+        cardElement.classList = 'card-red';
+        
 
     }
 /*per i multipli di 3 stampi “Fizz” al posto del numero*/
     else if ( output % 3 === 0 ) {
         console.log("Fizz");
         pElement.textContent = 'Fizz';
-        
+        cardElement.classList = 'card-green';
     }
 /* per i multipli di 5 stampi “Buzz” al posto del numero*/
     else if ( output % 5 === 0 ) {
         console.log("Buzz");
         pElement.textContent = 'Buzz';
+        cardElement.classList = 'card-yellow';
     }
 
 
@@ -78,6 +81,7 @@ cardElement.appendChild(pElement);
     else {
         console.log(output);
         pElement.innerHTML = output;
+        cardElement.classList = 'card-blue';
 
     }
 

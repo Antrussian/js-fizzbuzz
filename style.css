@@ -1,9 +1,58 @@
 .card {
     width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: row;
 }
 
 .wrapper {
+justify-content: center;
+width: 100%;
+height: 100%;
+}
 
+.box {
+
+}
+.background {
+    background-color: #093B4C;
+}
+
+.title {
+    color: white;
+}
+.card-blue {
+    background-color: #1389B2;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+   
+}
+
+
+.card-yellow {
+    background-color: #FFD166;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.card-green {
+    background-color: #0BD6A1;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.card-red {
+    background-color: #F0466F;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
 }
